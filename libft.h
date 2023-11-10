@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 12:37:32 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/10 18:07:03 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/10 20:59:21 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int ft_toupper(int c);
 int ft_tolower(int c);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);
-
+int ft_strncmp(const char *s1, const char *s2, size_t n);
+void *ft_memchr(const void *s, int c, size_t n);
 #endif

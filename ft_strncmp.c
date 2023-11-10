@@ -1,44 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 19:54:34 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/10 18:39:00 by mchemcha         ###   ########.fr       */
+/*   Created: 2023/11/10 18:41:04 by mchemcha          #+#    #+#             */
+/*   Updated: 2023/11/10 19:39:40 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    int  i;
-    i = ft_strlen(s);
-    char *rep;
-
-    rep = NULL;
-    while(i >= 0)
-    {     
-        if (s[i] == (char ) c)
-        {
-            rep = ((char*) s + i);
-            break;
-        }
-        i--;
+    size_t i;
+    
+    i=0;
+    while (i < n  && ((unsigned char)s1[i] != '\0' || (unsigned char)s2[i] != '\0'))
+    {
+        if ((unsigned char)s1[i] != (unsigned char)s2[i])
+            return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+        i++;
     }
-    return (rep);
+    return 0;
 }
 // #include <stdio.h>
 // #include <string.h>
-
-// int main() 
+// int main()
 // {
-//     const char *str = "marihh kup;kng";
-//     //char *ptr = strrchr(str, 'o');
-//     char *p2 = ft_strrchr(str, 'k');
-//     //printf("%s", ptr);
-//     printf("%s", p2);
-//     return 0;
+    
+//     printf("%d\n",ft_strncmp("test\200", "test\0", 6));
+//     printf("%d",  strncmp("test\200", "test\0", 6));
 // }
