@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 12:37:32 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/15 12:13:29 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/15 12:24:46 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ char    *ft_strtrim(char const *s1, char const *set);
 void ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char *str, int fd);
 void ft_putendl_fd(char *s, int fd);
+void    ft_putnbr_fd(int n, int fd);
 #endif
