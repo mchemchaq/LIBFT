@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 12:37:32 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/15 12:24:46 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/17 21:38:22 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <string.h>
 #include <unistd.h>
+#include <stdlib.h>
 //#include <stdio.h>
 
 int ft_isalpha(int c);
@@ -50,4 +51,5 @@ void ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char *str, int fd);
 void ft_putendl_fd(char *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 #endif

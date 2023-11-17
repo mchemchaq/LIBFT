@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 14:13:35 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/15 09:14:23 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/17 21:20:40 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_calloc(size_t count, size_t size)
 	i = 0;
 	while (i < count * size)
 	{
-		tmp[i] = 0;
+		tmp[i] = '\0';
 		i++;
 	}
 	return (tmp);
