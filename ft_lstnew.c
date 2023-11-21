@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 21:26:44 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:40:25 by mchemcha         ###   ########.fr       */
+/*   Created: 2023/11/19 17:48:30 by mchemcha          #+#    #+#             */
+/*   Updated: 2023/11/19 17:58:37 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	i;
-	size_t	s;
+	t_list	*p;
 
-	i = 0;
-	s = 0;
-	while (str[i])
+	p = 
+	p = content;
+	while (!p)
 	{
-		s = s + 1;
-		i++;
+		
 	}
-	return (s);
 }
-// int main()
-// {
-// 	printf("%zu", ft_strlen("maryem"));
-// }

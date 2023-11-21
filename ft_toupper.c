@@ -6,19 +6,19 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 18:48:05 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/06 17:30:52 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:02:35 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-int ft_toupper(int c)
+
+int	ft_toupper(int c)
 {
-    if ( c >= 'a' && c <= 'z')
-        return (c - 32);
-    return (c);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }
-//int main()
+// int main()
 //{
-//    printf("%d", ft_toupper('R'));
-//}
+//     printf("%d", ft_toupper('R'));
+// }
