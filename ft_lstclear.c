@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 20:49:59 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/24 21:43:34 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/24 21:48:49 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ void   	 ft_lstclear(t_list **lst, void (*del)(void*))
 		ft_lstdelone(p, del);
     }
 }
-void my_del_function(void *data) 
-{
-    printf("%s", data);
-}
+// void my_del_function(void *data) 
+// {
+//     printf("%s", data);
+// }
 
-int main()
-{
-    t_list *nv =  ft_lstnew("maryem");
+// int main()
+// {
+//     t_list *nv =  ft_lstnew("maryem");
     
-    ft_lstclear(&nv, my_del_function);
-}
+//     ft_lstclear(&nv, my_del_function);
+// }
