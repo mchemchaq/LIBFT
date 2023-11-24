@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 17:48:30 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/22 20:17:30 by mchemcha         ###   ########.fr       */
+/*   Created: 2023/11/24 20:49:59 by mchemcha          #+#    #+#             */
+/*   Updated: 2023/11/24 21:43:34 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void   	 ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list	*list;
-
-	list = (t_list *)malloc(sizeof(t_list));
-	if (list == NULL)
-		return (NULL);
-	list -> content = content;
-	list -> next = NULL;
-	return (list);
+	t_list *p;
+	
+    if (*lst == NULL)
+        return ;
+	while (*lst && lst)
+	{
+		p = *lst;
+		*lst = p->next;
+		ft_lstdelone(p, del);
+    }
+}
+void my_del_function(void *data) 
+{
+    printf("%s", data);
 }
 
-// #include <stdio.h>
-// int	main()
-// {
-// 	t_list *liste = NULL;
-// 	t_list *nv = ft_lstnew("maryem");
-// 	liste = nv;
-// 	printf("Contenu du nouvel élément : %s\n", (char *)nv->content);
-// }
+int main()
+{
+    t_list *nv =  ft_lstnew("maryem");
+    
+    ft_lstclear(&nv, my_del_function);
+}

@@ -6,18 +6,19 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 14:13:35 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/17 21:20:40 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/24 21:42:32 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*tmp;
-	size_t			i;
+	char	*tmp;
+	size_t	i;
 
+	if (size >= 2147483647|| count >= 2147483647)
+		return (NULL);
 	tmp = malloc(count * size);
 	if (!tmp)
 		return (NULL);
@@ -31,21 +32,31 @@ void	*ft_calloc(size_t count, size_t size)
 }
 // int main() {
 
-//     int i;
-//     int * pointer ;
+    // int i;
+    // int * pointer ;
+    // int * pointer1 ;
 
-//     pointer = (int *) calloc( 5, sizeof(int) );
-//     printf("%d", pointer[6]);
-// //assert( pointer != NULL );
+    // pointer = (int *) calloc( 878787878787878787, sizeof(int) );
+    // pointer1 = (int *) ft_calloc( 878787878787878778, sizeof(int) );
+	// printf("")
+    // printf("%d", pointer[6]);
+//assert( pointer != NULL );
 
-// //     for ( i=0; i<5-1; i++ ) {
-// //         pointer[i] = i;
-// //     }
-// //     for (i=0; i<5; i++ ) {
-// //         printf( "%d ", pointer[i] );
-// //     }
-// //     printf( "\n" );
+//     for ( i=0; i<5-1; i++ ) {
+//         pointer[i] = i;
+//     }
+//     for (i=0; i<5; i++ ) {
+//         printf( "%d ", pointer[i] );
+//     }
+//     printf( "\n" );
 
-// //     return 0;
-// //
+//     return 0;
+//
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+// 	printf("%s\n",ft_calloc(8787878787878787 ,1));
+// 	// printf("%s",calloc(8787878787878787 ,1));
 // }

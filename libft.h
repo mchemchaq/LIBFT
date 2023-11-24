@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 12:37:32 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/21 20:26:48 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/24 20:49:38 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
-typedef	struct s_list
+typedef struct	s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -63,4 +64,10 @@ char	**ft_split(char const *s, char c);
 // bonuss
 
 t_list	*ft_lstnew(void *content);
+void 	ft_lstadd_front(t_list **lst, t_list *newlst);
+int 	ft_lstsize(t_list *lst);
+t_list *ft_lstlast(t_list *lst);
+void 	ft_lstadd_back(t_list **lst, t_list *newlst);
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+void	ft_lstclear(t_list **lst, void (*del)(void*));
 #endif

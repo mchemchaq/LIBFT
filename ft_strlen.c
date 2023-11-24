@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 21:26:44 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:40:25 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/24 19:27:43 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,3 @@ size_t	ft_strlen(const char *str)
 	}
 	return (s);
 }
-// int main()
-// {
-// 	printf("%zu", ft_strlen("maryem"));
-// }
