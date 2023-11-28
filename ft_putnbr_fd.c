@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 12:14:47 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/28 17:59:13 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/28 18:46:25 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_putnbr_fd(int n, int fd)
 	unsigned int	nb;
 
 	nb = n;
-	
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
