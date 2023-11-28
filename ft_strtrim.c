@@ -6,12 +6,11 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:40:42 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:57:43 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/25 17:46:24 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	in_str(char const *set, char const c)
 {

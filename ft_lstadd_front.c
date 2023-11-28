@@ -6,16 +6,16 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 21:23:49 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/23 19:07:32 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/28 15:39:28 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void 	ft_lstadd_front(t_list **lst, t_list *newlst)
+void	ft_lstadd_front(t_list **lst, t_list *newlst)
 {
 	if (lst == NULL)
-		return;
+		return ;
 	if (*lst == NULL)
 		newlst -> next = NULL;
 	newlst -> next = *lst;
