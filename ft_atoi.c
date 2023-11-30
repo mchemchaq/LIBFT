@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 17:18:13 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/28 18:48:24 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:28:31 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,35 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int				i;
+	int				sign;
+	unsigned long	result;
 
 	result = 0;
 	sign = 1;
 	i = 0;
-	while ((str[i] == 9 || str[i] == 10 || str[i] == 11 || str[i] == 12 
-			|| str[i] == 13 || str[i] == 32))
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	if (str[i] == '+' && str[i + 1] != '-')
-		i++;
-	if (str[i] == '-') 
+	if (str[i] == '+' || str[i] == '-')
 	{
-		sign = -1;
+		if (str[i] == '-')
+			sign *= -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9') 
 	{
-		result = (result * 10 + (str[i] - '0'));
+		if (result > (SIZE_MAX - (str[i] - 48)) / 10 && sign > 0)
+			return (-1);
+		else if (result > (SIZE_MAX - (str[i] - 48)) / 10 && sign < 0)
+			return (0);
+		result = (result * 10 + str[i] - 48);
 		i++;
 	}
-	result *= sign;
-	return (result);
+	return (result *= sign);
 }
 // #include <stdio.h>
 // int main()
 // {
-//     printf("%d\n", ft_atoi(" -95693"));
-//     printf("%d", atoi(" -95693"));
+//     printf("%d\n", ft_atoi("-2147483648214748364821474836"));
+//     printf("%d\n", atoi("-2147483648214748364821474836"));
 // }

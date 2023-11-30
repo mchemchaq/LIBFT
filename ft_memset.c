@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 21:39:39 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/24 20:36:47 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/30 18:42:21 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,25 @@ void	*ft_memset( void *b, int c, size_t len)
 	}
 	return (b);
 }
+// #include <stdio.h>
 // int main() {
-//     int a = 7;
-
-// 	ft_memset(&a, 7, 2);//111 111
-// 	ft_memset(&a, 208, 1);// 111 011001
-
-// 	printf("old: %d\n", a);
+// 	int ptr[]= {1,2,3,4,5};
+// 	int i;
+// 	int v;
+// 	while (i < sizeof(ptr)/sizeof(int) )
+// 	{
+// 		printf("%d\n", ptr[i]);
+// 		i++;
+// 	}
+// 	v = *(int*)ft_memchr(ptr, 4, 20);
+// 	printf("---------\n" );
+// 	i = 0;
+// 	ft_memset((int*)ft_memchr(ptr, 4, 20),0, 1);//111 111
+// 	while (i < sizeof(ptr)/sizeof(int) )
+// 	{
+// 		printf("%d\n", ptr[i]);
+// 		i++;
+// 	;}
+// 	printf("%d", v );
+// 	//ft_memset(&a, 208, 1);// 111 011001
 // }

@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 19:43:53 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/21 18:19:36 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/29 19:43:20 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int main()
 // {
-//     void *r1 = ft_memchr("marte jsatr", 'a', 5);
-//     printf("%p\n", r1);
-//     void *r2 = memchr("marte jsatr", 'a', 5);
-//     printf("%p\n",git add r2);
+//     char *r1 ;
+// 	r1 = ft_memchr("marte jsatr", 'a', 5);
+//     printf("%s\n", r1);
+//     //void *r2 = memchr("marte jsatr", 'a', 5);
 // }

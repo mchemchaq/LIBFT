@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:36:14 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/05 21:43:12 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:56:46 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (srcsize);
 }
+// int main()
+// {
+// 	char *dst = "hell"
+// }

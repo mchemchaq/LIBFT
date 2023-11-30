@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:39:32 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 14:56:02 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/28 18:56:19 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,11 @@ void	ft_bzero(void *s, size_t n)
 }
 // int main()
 // {
-//     char myString[] = "Hello, World!";
+//     char str[] = "Hello, World!";
 //     size_t len = 5;
+//     ft_bzero(str, len);
 
-//     printf("Avant ft_bzero : %s\n", myString);
-
-//     ft_bzero(myString, len);
-
-//     printf("Après ft_bzero : %s\n", myString);
+//     printf("%s\n", str);
 
 //     return 0;
 // }

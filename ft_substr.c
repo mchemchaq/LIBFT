@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 19:02:34 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 16:01:12 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/28 19:18:56 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 //         printf("%s\n", s2);
 //         free(s2);
 //     }
-
 //     return 0;
-
 // }

@@ -5,6 +5,7 @@
         "stdio.h": "c",
         "stdlib.h": "c",
         "libft.h": "c",
-        "__node_handle": "c"
+        "__node_handle": "c",
+        "__locale": "c"
     }
 }

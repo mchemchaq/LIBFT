@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:22:36 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 17:14:32 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:25:32 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,25 @@ void	ft_putstr_fd(char *str, int fd)
 		i++;
 	}
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <unistd.h>
+
 // int main(void)
 // {
-//     char *myChar = "24"; 
-//     int fileDescriptor = 1; 
-//     ft_putstr_fd(myChar, fileDescriptor);
+//     FILE *fd;
+//     fd = fopen("file1", "w");
+//     if (fd == NULL)
+//     {
+//         printf("Error opening file");
+//         return 1;
+//     }
+
+//     char *myChar = "hi maryem\n";
+// 	fprintf(fd, "hello word\n");
+//     ft_putstr_fd(myChar, fileno(fd));
+
+//     fclose(fd);
 
 //     return 0;
 // }

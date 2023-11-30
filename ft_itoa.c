@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:47:11 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/28 18:48:03 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/11/29 18:52:10 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static char	*swap_str(char *nbr)
 	return (nbr);
 }
 
-void	cpyls(int n, char *nbr)
+static void	cpyls(int n, char *nbr)
 {
 	int	i;
 	int	m;
