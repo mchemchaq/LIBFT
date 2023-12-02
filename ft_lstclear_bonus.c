@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 20:49:59 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/28 15:39:06 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:19:09 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*p;
 
-	if (*lst == NULL)
+	if (!del || *lst == NULL)
 		return ;
 	while (*lst && lst)
 	{

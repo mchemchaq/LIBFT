@@ -6,12 +6,11 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:47:11 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/29 18:52:10 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/02 21:02:00 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	len_nbr(int n)
 {
@@ -57,8 +56,6 @@ static void	cpyls(int n, char *nbr)
 
 	i = 0;
 	m = 0;
-	if (n == 0)
-		nbr[i] = '0';
 	if (n < 0)
 	{
 		n = -n;
@@ -86,12 +83,11 @@ char	*ft_itoa(int n)
 	nbr = malloc(len_nbr(n) + 1);
 	if (!nbr)
 		return (NULL);
+	if (n == 0)
+	{
+		free(nbr);
+		return (ft_strdup("0"));
+	}
 	cpyls(n, nbr);
 	return (swap_str(nbr));
 }
-// #include <stdio.h>
-
-// int main() {
-//   int n = -274836;
-//   printf("%s", ft_itoa(n));
-// }

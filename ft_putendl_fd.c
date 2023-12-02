@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:37:08 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 17:08:31 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/02 20:59:10 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (fd < 0)
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);

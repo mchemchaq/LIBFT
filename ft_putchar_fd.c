@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 21:16:54 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 17:03:58 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/02 21:01:20 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd < 0)
+		return ;
 	write(fd, &c, 1);
 }
-// int main(void)
-// {
-//     char myChar = 'A'; 
-//     int fileDescriptor = 1; 
-//     ft_putchar_fd(myChar, fileDescriptor);
-
-//     return 0;
-// }
