@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 16:14:20 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 16:36:16 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:59:15 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (str);
 }
-// #include <stdio.h>
-// int main()
-// {
-//     char *s1 = "hello";
-//     char *s2 = " word!";
-//     char *str = ft_strjoin(s1, s2);
-//     printf("%s", str);
-// }

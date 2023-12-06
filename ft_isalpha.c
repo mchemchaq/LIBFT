@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 18:08:03 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/04 17:55:53 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:42:11 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-// int main()
-// {
-//     printf("%d", ft_isalpha(7));
-// 	printf("%d", isalpha(3));
-// }

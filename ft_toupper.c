@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 18:48:05 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 16:02:35 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 18:32:02 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-// int main()
-//{
-//     printf("%d", ft_toupper('R'));
-// }

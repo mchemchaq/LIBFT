@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 19:47:57 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/04 18:49:47 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:18:55 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-//int main()
-//{
-//	printf("%d", ft_isascii('a'));
-//	printf("%d", isascii('a'));
-//}

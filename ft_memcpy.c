@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 18:58:38 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:58:33 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:58:54 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-// int main()
-// {
-//    char src[] = "maryem";
-//    char dst[7];
-//    printf("%s", (char *)ft_memcpy(src + 1, src, 1));
-// }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 18:10:55 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/28 15:48:55 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:59:07 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (s);
 }
-
-// #include <stdio.h>
-// int	main()
-// {	
-// 	t_list *liste = NULL;
-// 	t_list *nv = ft_lstnew("maryem");
-// 	t_list *nv1 = ft_lstnew("1337");
-// 	//t_list *nv2 = ft_lstnew("hello word");
-// 	liste = nv;
-// 	ft_lstadd_front(&liste , nv1);
-// 	//ft_lstadd_front(&liste , nv2);
-// 	int i = ft_lstsize(liste);
-//     printf("%d", i);
-// }

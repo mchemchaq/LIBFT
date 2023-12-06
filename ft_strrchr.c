@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 19:54:34 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:48:45 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:36:12 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = ft_strlen(s);
 	rep = NULL;
-	while (i >= 0) 
+	while (i >= 0)
 	{
-		if (s[i] == (char)c) 
+		if (s[i] == (char)c)
 		{
 			rep = ((char *)s + i);
 			break ;
@@ -30,15 +30,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (rep);
 }
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     const char *str = "marihh kup;kng";
-//     //char *ptr = strrchr(str, 'o');
-//     char *p2 = ft_strrchr(str, 'k');
-//     //printf("%s", ptr);
-//     printf("%s", p2);
-//     return 0;
-// }

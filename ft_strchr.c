@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 19:27:51 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 17:17:22 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:35:30 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-/*int main()
-{                        
-    const char str[] = "";
-    char c = 'l';
-
-    char *result = ft_strchr(str, c);
-
-    if (result != NULL) 
-    {
-        printf("Le caractère '%c' a été trouvé à la position : %s\n", c, result);
-    }
-    return 0;
-}*/

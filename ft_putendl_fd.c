@@ -6,11 +6,12 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:37:08 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/12/02 20:59:10 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:34:59 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {

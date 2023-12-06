@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 21:04:11 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:25:48 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:34:45 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if ((unsigned char )str1[i] != (unsigned char)str2[i])
+		if ((unsigned char)str1[i] == (unsigned char)str2[i])
+			i++;
+		else
 			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
-		i++;
 	}
 	return (0);
 }
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-//     printf("%d", ft_memcmp("abbcd", "mimi", 4));
-//     printf("%d", memcmp("abbcd", "mimi", 4));
-// }

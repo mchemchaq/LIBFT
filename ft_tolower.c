@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 19:16:16 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/25 17:46:34 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:38:46 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-/*int main()
-{
-    printf("%d", ft_tolower('R'));
-}*/

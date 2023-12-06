@@ -17,16 +17,17 @@ OBJSB = ${SRCSB:.c=.o}
 CC = cc
 FLAGS = -Wall -Werror -Wextra
 
+all: ${NAME}
 
 ${NAME}: ${OBJS}
-	${LIBC} ${NAME} ${OBJS}
+	${LIBC} ${NAME} $^
+
 bonus : ${OBJSB}
 	${LIBC} ${NAME} ${OBJSB}
 
 %.o: %.c libft.h
 	$(CC) $(FLAGS) -c $< -o $@
 
-all: ${NAME}
 
 clean:
 	rm -rf $(OBJS) $(OBJSB)
@@ -34,3 +35,5 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
+
+.PHONY: clean fclean re bonus all 

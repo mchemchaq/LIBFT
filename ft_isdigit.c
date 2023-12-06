@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 19:07:04 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/04 18:51:14 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:42:20 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/* int main()
-{
-	printf("%d", ft_isdigit('6867'));
-} */

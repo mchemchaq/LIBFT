@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 14:13:35 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/29 21:42:43 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:18:40 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (tmp);
 }
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main()
-// {
-// 	printf(" my calloc = %s\n",ft_calloc(45 ,-11));
-// 	printf("calloc = %s",calloc(45 ,-11));
-// }

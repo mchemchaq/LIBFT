@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 15:25:02 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/25 17:46:15 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:26:49 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *s1, const char *ch, size_t len)
 	chlen = ft_strlen(ch);
 	while (i < len && s1[i])
 	{
-		if (s1[i] == *ch && len - i >= chlen 
+		if (s1[i] == *ch && len - i >= chlen
 			&& ft_strncmp(&s1[i], ch, chlen) == 0)
 		{
 			return ((char *)&s1[i]);
@@ -32,9 +32,3 @@ char	*ft_strnstr(const char *s1, const char *ch, size_t len)
 	}
 	return (NULL);
 }
-//#include <stdio.h>
-// int main()
-// {
-//     printf("%s", ft_strnstr("hello word!", "l",3 ));
-//     printf("%s", strnstr("hello word!", "l",3 ));
-// }

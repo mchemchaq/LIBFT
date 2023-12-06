@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 19:43:53 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/29 19:43:20 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:34:04 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (str[i] == ch) 
+		if (str[i] == ch)
 		{
 			return ((void *)&str[i]);
 		}
@@ -31,13 +31,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-// #include <string.h>
-// #include <stdio.h>
-
-// int main()
-// {
-//     char *r1 ;
-// 	r1 = ft_memchr("marte jsatr", 'a', 5);
-//     printf("%s\n", r1);
-//     //void *r2 = memchr("marte jsatr", 'a', 5);
-// }

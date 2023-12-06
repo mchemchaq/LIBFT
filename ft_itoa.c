@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:47:11 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/12/02 21:02:00 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:36:33 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static char	*swap_str(char *nbr)
 	return (nbr);
 }
 
-static void	cpyls(int n, char *nbr)
+static void	to_str(int n, char *nbr)
 {
 	int	i;
 	int	m;
@@ -65,7 +65,7 @@ static void	cpyls(int n, char *nbr)
 	{
 		nbr[i] = (n % 10) + '0';
 		i++;
-		n /= 10;
+		n = n / 10;
 	}
 	if (m == 1)
 		nbr[i++] = '-';
@@ -80,14 +80,13 @@ char	*ft_itoa(int n)
 	m = 0;
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
+	if (n == 0)
+	{
+		return (ft_strdup("0"));
+	}
 	nbr = malloc(len_nbr(n) + 1);
 	if (!nbr)
 		return (NULL);
-	if (n == 0)
-	{
-		free(nbr);
-		return (ft_strdup("0"));
-	}
-	cpyls(n, nbr);
+	to_str(n, nbr);
 	return (swap_str(nbr));
 }

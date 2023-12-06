@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 12:38:02 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 15:41:57 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:36:02 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,23 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	cara[i] = '\0';
 	return (cara);
 }
-
-// char custom_function(unsigned int i, char c)
-// {
-//     if (c >= 'a' && c <= 'z')
-//         c = c - 32;
-//     return (c);
-// }
-// #include <stdio.h>
-// int main()
-// {
-//     const char *str = "Hello";
-//     char *result = ft_strmapi(str, &custom_function);
-//     printf("Original string: %s\n", str);
-//     printf("Mapped string  : %s\n", result);
-
-//     // Free the allocated memory
-//     free(result);
-
-//     return 0;
-// }

@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 12:15:19 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 17:30:29 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:35:25 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,11 +78,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (tab);
 }
-
-// int main()
-// {
-//     char **str = ft_split("      hello mary   jj   ", ' ');
-
-//     puts(str[0]);
-
-// }

@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 21:01:21 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/19 17:35:49 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:51:57 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	if (dst == src)
 		return (dst);
-	if (d > s)
+	if (d > s && s + len > d)
 	{
 		while (len-- > 0)
 			d[len] = s[len];
@@ -40,9 +40,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-//int main()
-//{
-//    char s[]= "hello,word";
-//    char d[]="";
-//    printf("%s", ft_memmove(d, s, 3));
-//}

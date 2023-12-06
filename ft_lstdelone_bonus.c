@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 20:48:04 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/28 15:44:24 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:31:26 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	}
 	free (lst);
 }
-// void my_del_function(void *data) 
-// {
-//     printf("%s", data);
-// }
-// int main()
-// {
-//     t_list *nv =  ft_lstnew("maryem");
-//     ft_lstdelone(nv, my_del_function);
-// }

@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:40:42 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/11/25 17:46:24 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/06 18:55:56 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j--;
 	return (ft_substr(s1, i, j - i + 1));
 }
-// #include <stdio.h>
-// int main()
-// {
-//     char *s1= "maryam";
-//     char *set="ma";
-//     printf("%s", ft_strtrim(s1, set));
-// }
